@@ -7,7 +7,7 @@ Docker Dependencies
 
 The following docker images must be available and added to the environment 
 
-*sms-mi-reg Docker Container: https://github.com/ComputationalRadiology/sms-mi-reg/
+● sms-mi-reg Docker Container: https://github.com/ComputationalRadiology/sms-mi-reg/
 
 *motion-monitor Docker Container: https://github.com/josh-auger/motion-monitor
 
