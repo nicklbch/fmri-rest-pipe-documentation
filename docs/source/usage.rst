@@ -100,6 +100,8 @@ _______________________________________
 
 Optionally the file location of ITK-SnAP Label Description File corresponding to a nifti or nrrd formatted 3D parcellation. **By default, the SCA will be based upon the Harvard Oxford Atlas with a symmetric split and does not require --atlas_label unless specifying a --atlas_path. A specified parcellation will only run if both  --atlas_path and --atlas_label are specified. Must specify if using --atlas_path tag**
 
+.. code-block:: console
+
    ITK-SnAP Label Description File Format:
    ################################################
    # ITK-SnAP Label Description File
