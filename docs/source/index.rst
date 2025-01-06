@@ -1,17 +1,16 @@
-Welcome to Lumache's documentation!
+fMri Resting State Analysis Pipeline Dcumentation
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**fmri-rest-pipe** fMri Resting State Analysis Pipeline is an analysis pipeline desinged to strategically and simply run region based correlation and motion analysis based upon sorted DICOM data. This pipeline will return a seed-based correlation analysis based upon the NiLearn
+wrapper as well as a slice-to-volume based motion analysis of a set of DICOM
+formatted data.
+
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
-.. note::
+.. figure:: Focus_FEDI.png
 
-   This project is under active development.
 
 Contents
 --------
