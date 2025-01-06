@@ -19,5 +19,6 @@ Contents
 
 .. toctree::
 
+   requirements
    usage
-   api
+   outputs
