@@ -27,8 +27,8 @@ This folder contains a square N x N numpy array of seed correlations called **np
 
 The **working, sub-<MRN>_ses-<study_date>_task-rest_bold.json and sub-<MRN>_ses-<study_date>_task-rest_bold.nii.gz** are used for debugging and computational purposes for the motion analysis. 
 
-**Additional Outputs**
-______________
+Additional Outputs
+------------
 
 The following outputs are created for debugging or computational purposes.
 
