@@ -26,7 +26,7 @@ Or
 Explaination of Inputs
 ----------------
 
-***--dicom (Required) Dicom Sorted Data File Path***
+**--dicom (Required) Dicom Sorted Data File Path**
 The input required by the pipeline requires a set of sorted formatted DICOM data. For data hosted on the BCH research synapse, this can be achieved via the following commands. 
 
 .. code-block:: console
