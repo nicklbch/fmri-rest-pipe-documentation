@@ -23,25 +23,45 @@ The following python must be available and added to the environment, this can of
    pip3 install <package>
 
 ● nibabel
+
 ● os
+
 ● numpy as np
+
 ● pandas as pd
+
 ● from nilearn  datasets
+
 ● from nilearn  plotting
+
 ● from nilearn  surface
+
 ● from nilearn.connectome  ConnectivityMeasure
+
 ● from nilearn.maskers  NiftiLabelsMasker
+
 ● matplotlib.pyplot as plt
+
 ● subprocess
+
 ● json
+
 ● SimpleITK as sitk
+
 ● scipy.stats as st
+
 ● sys
+
 ● argparse
+
 ● os
+
 ● glob
+
 ● from collections  OrderedDict
+
 ● re
+
 
 
 
