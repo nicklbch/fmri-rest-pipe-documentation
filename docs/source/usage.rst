@@ -63,6 +63,7 @@ If data is not from the research synapse, the DICOM data should be uncompressed 
 
 
 **--MRN (Required) Medical Record Number of Participant**
+_______________________________________
 
 The MRN or Identification number for the study subject passed as a string. This should be consistent with the dicom sorted data
 
@@ -72,7 +73,7 @@ _______________________________________
 The study date for analysis in format YYYYMMDD. This should be consistent with the dicom sorted data
 
 **--study_name (Required) Study Name**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 The study name derived from DICOM sorted data. This can be found by checking the third folder within the DICOM sorted data. MRN/study_date/study_name
 
