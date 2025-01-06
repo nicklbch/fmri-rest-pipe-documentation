@@ -17,6 +17,7 @@ Contents
 
 .. toctree::
 
+   index
    requirements
    usage
    outputs
