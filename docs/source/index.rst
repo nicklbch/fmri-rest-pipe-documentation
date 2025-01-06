@@ -6,8 +6,6 @@ wrapper as well as a slice-to-volume based motion analysis of a set of DICOM
 formatted data.
 
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
 
 Overview of Pipeline Processes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
