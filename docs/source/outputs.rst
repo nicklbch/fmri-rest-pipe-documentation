@@ -43,5 +43,3 @@ The following outputs are created for debugging or computational purposes.
 **ses-<study_date>:** Folder containing key fmriprep outputs used for computation.
 
 
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
