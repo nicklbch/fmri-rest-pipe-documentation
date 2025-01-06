@@ -61,6 +61,9 @@ The sorted folder will be the input path to this argument
 
 If data is not from the research synapse, the DICOM data should be uncompressed and formatted. See https://github.com/ComputationalRadiology/dicom-tools for further notes
 
+
+
+
 **--MRN (Required) Medical Record Number of Participant**
 
 The MRN or Identification number for the study subject passed as a string. This should be consistent with the dicom sorted data
