@@ -7,7 +7,7 @@ General Usage
 
 .. code-block:: console
 
-   sca-motion-parcellation.py --dicom --MRN --study_date --license --heuristic --atlas_path --atlas_label
+   sca-motion-parcellation.py --dicom --MRN --study_date --study_name --license --heuristic --atlas_path --atlas_label
 
 Example Usages
 ----------------
@@ -100,21 +100,21 @@ _______________________________________
 
 Optionally the file location of ITK-SnAP Label Description File corresponding to a nifti or nrrd formatted 3D parcellation. **By default, the SCA will be based upon the Harvard Oxford Atlas with a symmetric split and does not require --atlas_label unless specifying a --atlas_path. A specified parcellation will only run if both  --atlas_path and --atlas_label are specified. Must specify if using --atlas_path tag**
 
-ITK-SnAP Label Description File Format:
-################################################
-# ITK-SnAP Label Description File
-# File format: 
-# IDX   -R-  -G-  -B-  -A--  VIS MSH  LABEL
-# Fields: 
-#    IDX:   Zero-based index 
-#    -R-:   Red color component (0..255)
-#    -G-:   Green color component (0..255)
-#    -B-:   Blue color component (0..255)
-#    -A-:   Label transparency (0.00 .. 1.00)
-#    VIS:   Label visibility (0 or 1)
-#    IDX:   Label mesh visibility (0 or 1)
-#  LABEL:   Label description 
-################################################
+   ITK-SnAP Label Description File Format:
+   ################################################
+   # ITK-SnAP Label Description File
+   # File format: 
+   # IDX   -R-  -G-  -B-  -A--  VIS MSH  LABEL
+   # Fields: 
+   #    IDX:   Zero-based index 
+   #    -R-:   Red color component (0..255)
+   #    -G-:   Green color component (0..255)
+   #    -B-:   Blue color component (0..255)
+   #    -A-:   Label transparency (0.00 .. 1.00)
+   #    VIS:   Label visibility (0 or 1)
+   #    IDX:   Label mesh visibility (0 or 1)
+   #  LABEL:   Label description 
+   ################################################
 
 
 
