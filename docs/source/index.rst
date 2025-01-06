@@ -9,8 +9,8 @@ formatted data.
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
-**Overview of Pipeline Processes***
-
+Overview of Pipeline Processes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. figure:: Pipeline_Flow.png
 
 
