@@ -27,6 +27,7 @@ Explaination of Inputs
 ----------------
 
 **--dicom (Required) Dicom Sorted Data File Path**
+_______________________________________
 
 The input required by the pipeline requires a set of sorted formatted DICOM data. For data hosted on the BCH research synapse, this can be achieved via the following commands. 
 
@@ -73,24 +74,29 @@ _______________________________________
 The study date for analysis in format YYYYMMDD. This should be consistent with the dicom sorted data
 
 **--study_name (Required) Study Name**
+_______________________________________
 
 
 The study name derived from DICOM sorted data. This can be found by checking the third folder within the DICOM sorted data. MRN/study_date/study_name
 
 **--license (Required) FreeSurfer License File Location**
+_______________________________________
 
 The file location of a FreeSurfer License File saved as license.txt. A license can be obtained at https://surfer.nmr.mgh.harvard.edu/registration.html
 
 **--heuristic (Required) HeuDiConv Heuristic Conversion Python File Location**
+_______________________________________
 
 HeuDiConv requires a configuration python file to convert dicom data into BIDS compliant data. **This conversion however may differ depending on initial dicom source data.** For the Warfield Atlas data, the following heuristic.py file can be used https://github.com/ComputationalRadiology/sms-mi-reg/blob/main/sca-bmi-motion/sca/heuristic_pacs.py. This may need to be adjusted for the incoming dicom data source. For more information use https://heudiconv.readthedocs.io/en/latest/heuristics.html, https://heudiconv.readthedocs.io/en/latest/custom-heuristic.html, https://heudiconv.readthedocs.io/en/latest/
 
 **--atlas_path (Optional) Specify Atlas / Parcellation for Seed Correlation Analysis**
+_______________________________________
 
 Optionally the file location of a nifti or nrrd formatted 3D parcellation. **By default, the SCA will be based upon the Harvard Oxford Atlas with a symmetric split.** Parcellation should be in the native subject space, the Harvard Oxford Atlas will be run in the MNI2009 space. 
 **A specified parcellation will only run if both  --atlas_path and --atlas_label are specified. Must specify if using --atlas_label tag**
 
 **--atlas_label (Optional) Specify Atlas / Parcellation Labels for Seed Correlation Analysis**
+_______________________________________
 
 Optionally the file location of ITK-SnAP Label Description File corresponding to a nifti or nrrd formatted 3D parcellation. **By default, the SCA will be based upon the Harvard Oxford Atlas with a symmetric split and does not require --atlas_label unless specifying a --atlas_path. A specified parcellation will only run if both  --atlas_path and --atlas_label are specified. Must specify if using --atlas_path tag**
 
