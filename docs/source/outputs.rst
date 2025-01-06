@@ -1,33 +1,47 @@
-Usage
+Outputs and Output Conventions 
 =====
 
-.. _installation:
+In the sorted directory, the SCA-motion pipeline will create the following files / folders:
 
-Installation
+**BID,  final_outputs,  heuristic_pacs.py,  participant_sub-<MRN>,  __pycache__,  ses-<study_date>**
+
+The desired final outputs will all be placed in the final_outputs folder, with other folders kept for debugging or computational purposes
+
+final_outputs
 ------------
 
-To use Lumache, first install it using pip:
+The final_outputs will contain the following files / folders. 
 
-.. code-block:: console
+**motion_output,  sca_output,  sub-<MRN>_ses-<study_date>_task-rest_bold.json  sub-<MRN>_ses-<study_date>_task-rest_bold.nii.gz  working**
 
-   (.venv) $ pip install lumache
+**motion_output**
+_________________
 
-Creating recipes
-----------------
+This folder contains all transforms as .tfm files created via the slice-volume motion analysis. This folder also contains another folder named **sliceTransformalign-0000-0000_outputs** that contains motion monitoring results based upon the transforms. These outputs are further discussed in https://github.com/josh-auger/motion-monitor
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
 
-.. autofunction:: lumache.get_random_ingredients
+**sca_output**
+______________
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+This folder contains a square N x N numpy array of seed correlations called **np_correlation_matrix.npy** nd the set of N labels used as regions within the correlation called **atlas_labels.txt** . This is graphically represented in NifTi Seed Correlations of every region saved as convention sca_full.png. The individual correlation NifTis are also saved here as convention **sca_corellation_np_single_<Label Region>.nii.gz**
 
-.. autoexception:: lumache.InvalidKindError
+The **working, sub-<MRN>_ses-<study_date>_task-rest_bold.json and sub-<MRN>_ses-<study_date>_task-rest_bold.nii.gz** are used for debugging and computational purposes for the motion analysis. 
 
-For example:
+**Additional Outputs**
+______________
 
->>> import lumache
+The following outputs are created for debugging or computational purposes.
+
+**BID:** This folder contains the DICOM data in BIDS format using heudiconv
+
+**participant_sub-<MRN>:** This folder contains the data processed from the BIDS format by fmriprep into various transformed data and confounds (The outputs of fmriprep). See https://fmriprep.org/en/latest/outputs.html for more information
+
+**heuristic_pacs.py:** The heuristic file input copied over for computational usage.
+
+**__pycache__:** Python cache
+
+**ses-<study_date>:** Folder containing key fmriprep outputs used for computation.
+
+
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
