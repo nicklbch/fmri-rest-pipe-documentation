@@ -9,7 +9,7 @@ formatted data.
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
-.. figure:: Focus_FEDI.png
+.. figure:: Pipeline_Flow.png
 
 
 Contents
