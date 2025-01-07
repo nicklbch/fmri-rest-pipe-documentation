@@ -5,6 +5,8 @@ fMri Resting State Analysis Pipeline Dcumentation
 wrapper as well as a slice-to-volume based motion analysis of a set of DICOM
 formatted data.
 
+Program can be found at: https://github.com/ComputationalRadiology/fmri-rest-pipe
+
 
 
 Overview of Pipeline Processes
