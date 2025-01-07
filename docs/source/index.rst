@@ -1,4 +1,4 @@
-fMri Resting State Analysis Pipeline Dcumentation
+fMri Resting State Analysis Pipeline Documentation
 ===================================
 
 **fmri-rest-pipe** fMRI Resting State Analysis Pipeline is an analysis pipeline desinged to strategically and simply run region based correlation and motion analysis based upon sorted DICOM data. This pipeline will return a seed-based correlation analysis based upon the NiLearn
