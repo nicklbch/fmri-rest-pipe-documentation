@@ -1,9 +1,4 @@
-Template for the Read the Docs tutorial
+fmri-rest-pipe-documentation
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+This repository contains the documentation for fmri-rest-pipe. To see program see https://github.com/ComputationalRadiology/fmri-rest-pipe
