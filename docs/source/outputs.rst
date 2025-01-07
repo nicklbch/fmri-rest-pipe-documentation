@@ -1,7 +1,7 @@
 Outputs and Output Conventions 
 =====
 
-In the sorted directory, the SCA-motion pipeline will create the following files / folders:
+In the sorted directory, the SCA-motion pipeline will create the following files / folders within the initial specified DICOM sorted folder location:
 
 **BID,  final_outputs,  heuristic_pacs.py,  participant_sub-<MRN>,  __pycache__,  ses-<study_date>**
 
